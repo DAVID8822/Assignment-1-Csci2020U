@@ -46,7 +46,7 @@ public class Controller {
      *
      * @throws IOException
      */
-    public void DirecotryChooser(ActionEvent event) throws IOException {
+    public void DirectoryChooser(ActionEvent event) throws IOException {
 
 	DirectoryChooser dc = new DirectoryChooser();
 	dc.setInitialDirectory(new File("."));
