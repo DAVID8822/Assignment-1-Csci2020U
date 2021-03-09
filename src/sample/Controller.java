@@ -46,20 +46,11 @@ public class Controller {
      *
      * @throws IOException
      */
-    public void TestBtnAction(ActionEvent event) throws IOException {
+    public void DirecotryChooser(ActionEvent event) throws IOException {
 
 	DirectoryChooser dc = new DirectoryChooser();
 	dc.setInitialDirectory(new File("."));
-	File md = dc.showDialog(null);
-
-	if (md != null){
-	    String path = md.getAbsolutePath();
-	    directory.setText(path);
-	    parseFile(md);
-
-	}else{
-	    System.out.println("Error in finding directory");
-	}
+	File mainDirectory = dc.showDialog(null);
     }
 
 
